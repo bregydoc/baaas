@@ -1,0 +1,39 @@
+LET doc = DOCUMENT("https://login.etadirect.com/telefonica-pe.etadirect.com/mobility", {
+    driver: "cdp",
+    userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36"
+})
+
+
+LET username = "HACKATON14"
+LET password = "Hackaton_14"
+
+INPUT(doc, "input#username", username)
+INPUT(doc, "input#password", password)
+
+CLICK(doc, 'button[name="user_submitted_login_form"]')
+
+SCREENSHOT(doc, {})
+
+
+
+// // TODO: Multisession bypass routine
+
+// // WAIT_NAVIGATION(doc)
+
+// LET btn = ELEMENT(doc, 'button[name="user_submitted_login_form"]')
+// PRINT(btn)
+
+// WAIT(8000)
+
+
+// // CLICK(doc, "services:global-search:global-search-button")
+
+// INPUT(doc, "input.search-bar-input", "12323\n")
+// // INPUT(doc, "input.search-bar-input", "\\n")
+
+// WAIT(9000)
+
+// LET items = ELEMENTS(doc, "div.global-search-found-item")
+
+// FOR item IN items
+//   RETURN INNER_TEXT(item, "div.activity-title")

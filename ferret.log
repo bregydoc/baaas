@@ -3,3 +3,18 @@
 {"level":"error","error":"failed to load root element: cdp.DOM: ResolveNode: rpc error: No node with given id found (code = -32000)","time":"2020-11-08T14:38:54-05:00","message":"failed to load a new root document"}
 {"level":"error","error":"failed to load root element: cdp.DOM: ResolveNode: rpc error: No node with given id found (code = -32000)","time":"2020-11-08T14:40:12-05:00","message":"failed to load a new root document"}
 {"level":"error","error":"failed to load root element: cdp.DOM: ResolveNode: rpc error: No node with given id found (code = -32000)","time":"2020-11-08T14:41:47-05:00","message":"failed to load a new root document"}
+{"level":"warn","time":"2020-11-08T17:11:09-05:00","url":"https://login.etadirect.com/telefonica-pe.etadirect.com/mobility","error":"session: detach failed for session B89CCF582F8EADDC8C49793424BCA6CD: cdp.Target: DetachFromTarget: rpc error: No session with given id (code = -32602)","time":"2020-11-08T17:11:09-05:00","message":"failed to close connection"}
+{"level":"error","time":"2020-11-08T17:11:09-05:00","error":": session: detach failed for session B89CCF582F8EADDC8C49793424BCA6CD: cdp.Target: DetachFromTarget: rpc error: No session with given id (code = -32602)","time":"2020-11-08T17:11:09-05:00","message":"closing root scope"}
+{"level":"warn","time":"2020-11-08T17:12:38-05:00","url":"https://login.etadirect.com/telefonica-pe.etadirect.com/mobility","error":"session: detach failed for session BC6C89E9D1B6487999C0364D4A69517F: cdp.Target: DetachFromTarget: rpc error: No session with given id (code = -32602)","time":"2020-11-08T17:12:38-05:00","message":"failed to close connection"}
+{"level":"error","time":"2020-11-08T17:12:38-05:00","error":": session: detach failed for session BC6C89E9D1B6487999C0364D4A69517F: cdp.Target: DetachFromTarget: rpc error: No session with given id (code = -32602)","time":"2020-11-08T17:12:38-05:00","message":"closing root scope"}
+{"level":"warn","time":"2020-11-08T17:19:05-05:00","url":"https://login.etadirect.com/telefonica-pe.etadirect.com/mobility","error":"session: detach failed for session 0116D9BFBE9E1104ABC811625919208F: cdp.Target: DetachFromTarget: rpc error: No session with given id (code = -32602)","time":"2020-11-08T17:19:05-05:00","message":"failed to close connection"}
+{"level":"error","time":"2020-11-08T17:19:05-05:00","error":": session: detach failed for session 0116D9BFBE9E1104ABC811625919208F: cdp.Target: DetachFromTarget: rpc error: No session with given id (code = -32602)","time":"2020-11-08T17:19:05-05:00","message":"closing root scope"}
+{"level":"debug","time":"2020-11-08T17:21:59-05:00"}
+{"level":"error","time":"2020-11-08T17:42:40-05:00","error":"initialize driver: failed to initialize driver: could not resolve IP for 127.0.0.1","driver":"cdp","time":"2020-11-08T17:42:40-05:00","message":"failed to create a new connection"}
+{"level":"debug","time":"2020-11-08T18:04:01-05:00"}
+{"level":"debug","time":"2020-11-08T18:05:22-05:00"}
+{"level":"debug","time":"2020-11-08T18:05:33-05:00"}
+{"level":"debug","time":"2020-11-08T18:09:49-05:00","message":"Bienvenido a telefonica-pe"}
+{"level":"debug","time":"2020-11-08T18:11:20-05:00","message":"Bienvenido a telefonica-pe"}
+{"level":"debug","time":"2020-11-08T18:12:53-05:00","message":"Bienvenido a telefonica-pe"}
+{"level":"debug","time":"2020-11-08T18:14:18-05:00","message":"Bienvenido a telefonica-pe"}
