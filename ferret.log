@@ -1,0 +1,5 @@
+{"level":"debug","time":"2020-11-08T14:11:13-05:00","user-agent":"","time":"2020-11-08T14:11:13-05:00","message":"using User-Agent"}
+{"level":"error","error":"failed to load root element: cdp.DOM: ResolveNode: rpc error: No node with given id found (code = -32000)","time":"2020-11-08T14:38:25-05:00","message":"failed to load a new root document"}
+{"level":"error","error":"failed to load root element: cdp.DOM: ResolveNode: rpc error: No node with given id found (code = -32000)","time":"2020-11-08T14:38:54-05:00","message":"failed to load a new root document"}
+{"level":"error","error":"failed to load root element: cdp.DOM: ResolveNode: rpc error: No node with given id found (code = -32000)","time":"2020-11-08T14:40:12-05:00","message":"failed to load a new root document"}
+{"level":"error","error":"failed to load root element: cdp.DOM: ResolveNode: rpc error: No node with given id found (code = -32000)","time":"2020-11-08T14:41:47-05:00","message":"failed to load a new root document"}
