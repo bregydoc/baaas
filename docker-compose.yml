@@ -12,6 +12,6 @@ services:
       - facademodel
     restart: always
     environment:
-      DOMAINS: 'facademodel.baaas.minsky.cc -> http://facademodel:3000'
+      DOMAINS: 'facademodel.baaas.minsky.cc -> http://facademodel:8080'
       STAGE: 'production' # Don't use production until staging works
       # FORCE_RENEW: 'true'
