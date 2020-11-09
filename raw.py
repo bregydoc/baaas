@@ -1,6 +1,6 @@
 import requests
 
-ofsc42 = 'NTI5ZGNiY2UzYzYyM2E3YWQ4MzRjZWEwOGQ2Y2RjZjEwMDAtNWM2ZjM1NDRkN2IyNWI1M2VjYjg4OTI5MGNlZTBlZDMtODA1MjIyZWRjZTMxZTU5NDMzM2M2OWRiNjg3ZTRiYWI%3D'
+ofsc42 = 'ZWY1ZGMyMGY1ZTA3NzdjMzlkMGViOGFiNWJkNTc5NWQwMDAtNWNkMTU4MDU0MWJjYTNjZWFhMGVjMDJlMjYzZjBkZjAtOWVjMjg1ZTBkNWYzYjUwZDhlZTlkZjUyOGYzZWQwOGI%3D'
 trust = '$fast$sha256$df13ae8cbbeb9ded2a25187f33a2e1f2215f3e86ad539f7c8134647eb492ee0c.e25c3727f19face292ee04c544d5d27d'
 
 
@@ -53,7 +53,7 @@ def search_by_code(code: str):
         'searchDate': 'at_all',
         'skip_delta': '0',
         '__protocol': '5',
-        'dv': '{"c":"337|20201107161816","q":"2309123|20201107162858"}',
+        # 'dv': '{"c":"337|20201107161816","q":"2309123|20201107162858"}',
         'pid': '0',
         'u': 'HACKATON14',
         'f': 'json',
@@ -76,7 +76,7 @@ def retrieve_data_by_code(aid: str, pid: str):
         'disableAppCache': '1',
         'build': '20.5.13.0.14',
         'lastAuthId': 'toa_._telefonica-pe_.__._mobility',
-        'ofsc42': 'NDljOGFjN2Q2OGM0YjU0NzczYWY1ZTIzYzQ1ZmQwYmUwMDAtYTEwMzJhMWRmYjcyMzhlOWMwM2RjYjAwM2ViNDdiMmItZjY0Njc3ZTlhZDk4Mzc0MzhhMWYzNWJiMWI2Njc2YzU%3D',
+        'ofsc42': ofsc42,
     }
 
     headers = {
@@ -104,9 +104,9 @@ def retrieve_data_by_code(aid: str, pid: str):
         ('window_id', '1604882883-0000-0000'),
     )
 
-    data = '$------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="__protocol"\r\n\r\n5\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="dv"\r\n\r\n{"q":"28140|2021107162858"}\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="pid"\r\n\r\n'+pid+'\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="u"\r\n\r\nHACKATON14\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="f"\r\n\r\njson\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="pids"\r\n\r\n[]\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="aids"\r\n\r\n["9203927"]\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="restriction"\r\n\r\n0\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="qid"\r\n\r\nundefined\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="fakeIds"\r\n\r\n{}\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="trust"\r\n\r\n' + \
+    data = '$------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="__protocol"\r\n\r\n5\r\n'+'------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="dv"\r\n\r\n{"q":"28140|2020107162858"}\r\n'+'------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="pid"\r\n\r\n'+pid+'\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="u"\r\n\r\nHACKATON14\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="f"\r\n\r\njson\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="pids"\r\n\r\n[]\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="aids"\r\n\r\n["9203927"]\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="restriction"\r\n\r\n0\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="qid"\r\n\r\nundefined\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="fakeIds"\r\n\r\n{}\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="trust"\r\n\r\n' + \
         trust + \
-        '\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="fakeIdsClean"\r\n\r\n0\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="dq"\r\n\r\n2020-10-09\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="date"\r\n\r\n2020-10-09\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="dispatcher"\r\n\r\n1\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="mandatory[1][0]"\r\n\r\n9203927\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="limitActivitiesByPool[notscheduled]"\r\n\r\n5\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="skip_delta"\r\n\r\n0\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3--\r\n'
+        '\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="fakeIdsClean"\r\n\r\n0\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="dq"\r\n\r\n2020-10-09\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="date"\r\n\r\n2021-10-09\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="dispatcher"\r\n\r\n1\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="mandatory[1][0]"\r\n\r\n9203927\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="limitActivitiesByPool[notscheduled]"\r\n\r\n5\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3\r\nContent-Disposition: form-data; name="skip_delta"\r\n\r\n0\r\n------WebKitFormBoundaryQztSKdSTCAtACZZ3--\r\n'
 
     response = requests.post('https://telefonica-pe.etadirect.com/mobility/',
                              headers=headers, params=params, cookies=cookies, data=data)

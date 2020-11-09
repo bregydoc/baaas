@@ -1,0 +1,32 @@
+enum EvidenceKind {
+    FACADE
+    NAME
+    OBSERVATIONS
+    HEADBAND
+}
+
+type Evidence {
+    id: ID!
+    registerAt: Time!
+    kind: EvidenceKind!
+    name: String!
+    validity: Float!
+    blob: String
+    value: String
+}
+
+type Case {
+    id: ID!
+    createdAt: Time!
+
+    evidences: [Evidence!]!
+}
+
+type Query {
+    live: Float!
+    process(code: String!): Activity!
+}
+
+type Mutation {
+    registerNewEvidence(kind: EvidenceKind, )
+}
