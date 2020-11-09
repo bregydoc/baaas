@@ -9,7 +9,7 @@ services:
       - '80:80'
       - '443:443'
     links:
-      - wordpress
+      - facademodel
     restart: always
     environment:
       DOMAINS: 'facademodel.baaas.minsky.cc -> http://facademodel:3000'
