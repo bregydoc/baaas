@@ -24,7 +24,7 @@ type Case {
 
 type Query {
     live: Float!
-    process(code: String!): Activity!
+    process(code: String!): Case!
 }
 
 type Mutation {
