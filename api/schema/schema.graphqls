@@ -1,3 +1,5 @@
+scalar Datetime
+
 enum EvidenceKind {
     FACADE
     NAME
@@ -7,7 +9,7 @@ enum EvidenceKind {
 
 type Evidence {
     id: ID!
-    registerAt: Time!
+    registerAt: Datetime!
     kind: EvidenceKind!
     name: String!
     validity: Float!
@@ -17,7 +19,8 @@ type Evidence {
 
 type Case {
     id: ID!
-    createdAt: Time!
+    createdAt: Datetime!
+    updateAt: Datetime!
 
     evidences: [Evidence!]!
 }
@@ -28,5 +31,5 @@ type Query {
 }
 
 type Mutation {
-    registerNewEvidence(kind: EvidenceKind, )
+    registerNewEvidence(kind: EvidenceKind, raw: String, blob: String): Evidence!
 }

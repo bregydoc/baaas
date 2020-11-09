@@ -8,6 +8,10 @@ autopep8 = "*"
 
 [packages]
 requests = "*"
+ariadne = "*"
+starlette = "*"
+python-dotenv = "*"
+uvicorn = "*"
 
 [requires]
 python_version = "3.8"
