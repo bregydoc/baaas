@@ -1,6 +1,6 @@
 import requests
 
-ofsc42 = 'ZmIzMDgxM2YxMDBkMTY2Y2MxNmUxYThkODJkZTQxMDYwMDAtZWQzZTUyN2I2OTczMDA0MWQ0N2NlZTg3YWZkMTY3NzUtZWZjMTllNTJkOWFjOTI2MTRjMjRlNTJjMjVlOWE0YmQ%3D'
+ofsc42 = 'MjBjZWM0MzY4NjUyZmM3YTcyNGEyNmJjOGViOTIzMWIwMDAtNmQ3NDZhNmI1YzdmYThmNzZhYzc3ZDcyZWRhZWUyNTEtNWFhODZkOTBhOTlmMTY4MDBjOGQ3MmMyMjgzODBiZWU%3D'
 trust = '$fast$sha256$df13ae8cbbeb9ded2a25187f33a2e1f2215f3e86ad539f7c8134647eb492ee0c.e25c3727f19face292ee04c544d5d27d'
 
 
@@ -110,12 +110,4 @@ def retrieve_data_by_code(aid: str, pid: str):
 
     response = requests.post('https://telefonica-pe.etadirect.com/mobility/',
                              headers=headers, params=params, cookies=cookies, data=data)
-   
     return response.json()
-
-
-def get_pid(data: int):
-
-    
-    pid_value=data[9]["value"]["rows"][0]["pid"]
-    return pid_value
