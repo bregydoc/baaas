@@ -1,6 +1,6 @@
 import requests
 
-ofsc42 = 'NTI5ZGNiY2UzYzYyM2E3YWQ4MzRjZWEwOGQ2Y2RjZjEwMDAtNWM2ZjM1NDRkN2IyNWI1M2VjYjg4OTI5MGNlZTBlZDMtODA1MjIyZWRjZTMxZTU5NDMzM2M2OWRiNjg3ZTRiYWI%3D'
+ofsc42 = 'ZTAwZTIwNmUyZWRlOWZkZGM3YzhiYjUwNDM4MjhmZWQwMDAtNTQ2MjdlZDA5ZGYwZjlkZmYzZTAyNjhjM2Y5M2FiMDEtMTU1YzUyYzc4MzdmMDhlYjBiMGU3OGJjMDI4Y2E5YWY'
 trust = '$fast$sha256$df13ae8cbbeb9ded2a25187f33a2e1f2215f3e86ad539f7c8134647eb492ee0c.e25c3727f19face292ee04c544d5d27d'
 
 
@@ -76,7 +76,7 @@ def retrieve_data_by_code(aid: str, pid: str):
         'disableAppCache': '1',
         'build': '20.5.13.0.14',
         'lastAuthId': 'toa_._telefonica-pe_.__._mobility',
-        'ofsc42': 'NDljOGFjN2Q2OGM0YjU0NzczYWY1ZTIzYzQ1ZmQwYmUwMDAtYTEwMzJhMWRmYjcyMzhlOWMwM2RjYjAwM2ViNDdiMmItZjY0Njc3ZTlhZDk4Mzc0MzhhMWYzNWJiMWI2Njc2YzU%3D',
+        'ofsc42': ofsc42,
     }
 
     headers = {
