@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3e6201b02f938a0889c5f0ad4f60491e0e141ed5a3d6624adf1e50674b2ba92e"
+            "sha256": "1e0cec009b6a53394cc61b4c6d1a2d65e967dd85f4de572ddfb8cfa19de7e3cf"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -17,6 +17,9 @@
     },
     "default": {
         "ariadne": {
+            "extras": [
+                "asgi-file-uploads"
+            ],
             "hashes": [
                 "sha256:00a21584eb5ca8751380f9870d560db0a486ff69747884674caaee811a2ae64b",
                 "sha256:e88b574d13c155f934d5e57431e5f9ab3a266a7064a6e397e7c662241276e2e3"
@@ -74,6 +77,12 @@
             "index": "pypi",
             "version": "==0.15.0"
         },
+        "python-multipart": {
+            "hashes": [
+                "sha256:f7bb5f611fc600d15fa47b3974c8aa16e93724513b49b5f95c81e6624c83fa43"
+            ],
+            "version": "==0.0.5"
+        },
         "requests": {
             "hashes": [
                 "sha256:b3559a131db72c33ee969480840fff4bb6dd111de7dd27c8ee1f820f4f00231b",
@@ -81,6 +90,13 @@
             ],
             "index": "pypi",
             "version": "==2.24.0"
+        },
+        "six": {
+            "hashes": [
+                "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259",
+                "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
+            ],
+            "version": "==1.15.0"
         },
         "starlette": {
             "hashes": [

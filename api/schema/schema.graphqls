@@ -1,4 +1,5 @@
 scalar Datetime
+scalar Upload
 
 enum EvidenceKind {
     FACADE

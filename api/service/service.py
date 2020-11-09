@@ -3,7 +3,7 @@ from . import schema
 # Using Starlette
 
 from starlette.applications import Starlette
-from starlette.responses import JSONResponse
+# from starlette.responses import JSONResponse
 from starlette.routing import Route
 
 # from starlette.graphql import GraphQLApp

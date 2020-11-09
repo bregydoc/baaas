@@ -1,4 +1,4 @@
-from ariadne import load_schema_from_path, QueryType, MutationType, ScalarType, make_executable_schema
+from ariadne import load_schema_from_path, QueryType, MutationType, ScalarType, make_executable_schema, upload_scalar
 
 
 query = QueryType()
@@ -35,4 +35,5 @@ def resolve_register_new_evidence(_, info) -> str:
 
 type_defs = load_schema_from_path("./api/schema/schema.graphqls")
 
-schema = make_executable_schema(type_defs, query,  mutation)
+schema = make_executable_schema(
+    type_defs, query,  mutation, upload_scalar)
