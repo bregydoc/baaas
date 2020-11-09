@@ -1,5 +1,8 @@
 version: "3"
 services:
+  api:
+    build: .
+
   facademodel:
     image: emanuelsamir4docker/movhack-serving-ml
 
@@ -10,8 +13,9 @@ services:
       - '443:443'
     links:
       - facademodel
+      - api
     restart: always
     environment:
-      DOMAINS: 'facademodel.baaas.minsky.cc -> http://facademodel:8080'
+      DOMAINS: 'facademodel.baaas.minsky.cc -> http://facademodel:8080, api.baaas.minsky.cc -> http://api:5000'
       STAGE: 'production' # Don't use production until staging works
       # FORCE_RENEW: 'true'

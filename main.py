@@ -3,13 +3,13 @@ from api.service import app
 from settings import HOST, PORT
 import uvicorn
 
-data = search_by_code("12509324")
+# data = search_by_code("12509324")
 
-print(data)
+# print(data)
 
-data = retrieve_data_by_code("", "5212")
+# data = retrieve_data_by_code("", "5212")
 
-print(data)
+# print(data)
 
 
 if __name__ == "__main__":
