@@ -1,0 +1,17 @@
+version: "3"
+services:
+  facademodel:
+    image: emanuelsamir4docker/movhack-serving-ml
+
+  https-portal:
+    image: steveltn/https-portal:1
+    ports:
+      - '80:80'
+      - '443:443'
+    links:
+      - wordpress
+    restart: always
+    environment:
+      DOMAINS: 'facademodel.baaas.minsky.cc -> http://facademodel:3000'
+      STAGE: 'production' # Don't use production until staging works
+      # FORCE_RENEW: 'true'
