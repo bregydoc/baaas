@@ -1,0 +1,24 @@
+LET doc = DOCUMENT("https://telefonica-pe.etadirect.com/mobility/", {
+    driver: "cdp",
+    userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36",
+    cookies: [{
+        name: "ofsc42",
+        value: "Mjg1OTY4MzE3YmQ3MGVmOTNhYzI5NTE5ZWYxMDRkMzUwMDAtYTg0ZWQ4ZjcyNDI1ODcwNzY5OWNhNDk5OWNhM2JjNmItNzdmZDkwNjJlMDZiOWFkY2QyZGVjNjk0MTBlNzViMDg%3D"
+    }, {
+        name: "lastAuthId",
+        value: "toa_._telefonica-pe_.__._mobility"
+    }, {
+        name: "disableAppCache",
+        value: "0"
+    }, {
+        name: "build",
+        value: "20.5.13.0.14"
+    }]
+})
+
+WAIT(15000)
+
+RETURN INNER_TEXT(doc, "body")
+
+
+// COOKIE_SET("")

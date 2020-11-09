@@ -8,9 +8,8 @@ WAIT_NAVIGATION(doc)
 WAIT(9000)
 
 LET a = INNER_TEXT(doc, ".welcome")
+
 PRINT(a)
-
-
 
 LET username = "HACKATON14"
 LET password = "Hackaton_14"
@@ -24,11 +23,17 @@ WAIT_NAVIGATION(doc)
 
 WAIT(10000)
 
-// RETURN SCREENSHOT(doc, {width: 1920, height: 980})
+PRINT(INNER_TEXT(doc, "body"))
 
-// // TODO: Multisession bypass routine
+INPUT(doc, "input#password", password)
 
-// WAIT(8000)
+CLICK(doc, 'div.form-row.checkbox-with-label')
+
+CLICK(doc, 'button[name="user_submitted_login_form"]')
+
+WAIT_NAVIGATION(doc)
+
+WAIT(30000)
 
 INPUT(doc, "input.search-bar-input", "12323")
 INPUT(doc, "input.search-bar-input", "\n")
@@ -39,3 +44,11 @@ LET items = ELEMENTS(doc, "div.global-search-found-item")
 
 FOR item IN items
   RETURN INNER_TEXT(item, "div.activity-title")
+
+// RETURN SCREENSHOT(doc, {width: 1920, height: 980})
+
+RETURN INNER_TEXT(doc)
+
+// // TODO: Multisession bypass routine
+
+// // WAIT(8000)
